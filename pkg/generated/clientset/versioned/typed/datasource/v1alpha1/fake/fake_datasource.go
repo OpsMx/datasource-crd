@@ -32,13 +32,13 @@ import (
 
 // FakeDatasources implements DatasourceInterface
 type FakeDatasources struct {
-	Fake *FakeOpsmxV1alpha1
+	Fake *FakeAnalyticsV1alpha1
 	ns   string
 }
 
-var datasourcesResource = schema.GroupVersionResource{Group: "opsmx.com", Version: "v1alpha1", Resource: "datasources"}
+var datasourcesResource = schema.GroupVersionResource{Group: "analytics.opsmx.com", Version: "v1alpha1", Resource: "datasources"}
 
-var datasourcesKind = schema.GroupVersionKind{Group: "opsmx.com", Version: "v1alpha1", Kind: "Datasource"}
+var datasourcesKind = schema.GroupVersionKind{Group: "analytics.opsmx.com", Version: "v1alpha1", Kind: "Datasource"}
 
 // Get takes name of the datasource, and returns the corresponding datasource object, and an error if there is any.
 func (c *FakeDatasources) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1alpha1.Datasource, err error) {

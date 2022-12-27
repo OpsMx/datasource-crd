@@ -20,8 +20,8 @@ package fake
 
 import (
 	clientset "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned"
-	opsmxv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
-	fakeopsmxv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1/fake"
+	analyticsv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
+	fakeanalyticsv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
@@ -79,7 +79,7 @@ var (
 	_ testing.FakeClient  = &Clientset{}
 )
 
-// OpsmxV1alpha1 retrieves the OpsmxV1alpha1Client
-func (c *Clientset) OpsmxV1alpha1() opsmxv1alpha1.OpsmxV1alpha1Interface {
-	return &fakeopsmxv1alpha1.FakeOpsmxV1alpha1{Fake: &c.Fake}
+// AnalyticsV1alpha1 retrieves the AnalyticsV1alpha1Client
+func (c *Clientset) AnalyticsV1alpha1() analyticsv1alpha1.AnalyticsV1alpha1Interface {
+	return &fakeanalyticsv1alpha1.FakeAnalyticsV1alpha1{Fake: &c.Fake}
 }

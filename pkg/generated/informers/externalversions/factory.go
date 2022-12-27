@@ -243,9 +243,9 @@ type SharedInformerFactory interface {
 	// client.
 	InformerFor(obj runtime.Object, newFunc internalinterfaces.NewInformerFunc) cache.SharedIndexInformer
 
-	Opsmx() datasource.Interface
+	Analytics() datasource.Interface
 }
 
-func (f *sharedInformerFactory) Opsmx() datasource.Interface {
+func (f *sharedInformerFactory) Analytics() datasource.Interface {
 	return datasource.New(f, f.namespace, f.tweakListOptions)
 }

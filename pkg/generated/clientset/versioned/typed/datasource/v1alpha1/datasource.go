@@ -56,7 +56,7 @@ type datasources struct {
 }
 
 // newDatasources returns a Datasources
-func newDatasources(c *OpsmxV1alpha1Client, namespace string) *datasources {
+func newDatasources(c *AnalyticsV1alpha1Client, namespace string) *datasources {
 	return &datasources{
 		client: c.RESTClient(),
 		ns:     namespace,

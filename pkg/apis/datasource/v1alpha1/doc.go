@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package
-// +groupName=opsmx.com
+// +groupName=analytics.opsmx.com
 
 // Package v1alpha1 is the v1alpha1 version of the API.
 package v1alpha1 // import "github.com/opsmx/datasource-crd/pkg/apis/datasource/v1alpha1"

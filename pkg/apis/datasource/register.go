@@ -18,5 +18,5 @@ package datasource
 
 // GroupName is the group name used in this package
 const (
-	GroupName = "opsmx.com"
+	GroupName = "analytics.opsmx.com"
 )
