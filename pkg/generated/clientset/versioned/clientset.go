@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"net/http"
 
-	opsmxv1alpha1 "github.com/opsmx/datasources-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
+	opsmxv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

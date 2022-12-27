@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/opsmx/datasources-crd/pkg/generated/clientset/versioned"
-	opsmxv1alpha1 "github.com/opsmx/datasources-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
-	fakeopsmxv1alpha1 "github.com/opsmx/datasources-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1/fake"
+	clientset "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned"
+	opsmxv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1"
+	fakeopsmxv1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned/typed/datasource/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

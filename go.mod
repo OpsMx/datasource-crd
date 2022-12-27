@@ -1,4 +1,4 @@
-module github.com/opsmx/datasources-crd
+module github.com/opsmx/datasource-crd
 
 go 1.19
 

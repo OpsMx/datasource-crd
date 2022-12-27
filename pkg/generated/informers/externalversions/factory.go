@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/opsmx/datasources-crd/pkg/generated/clientset/versioned"
-	datasource "github.com/opsmx/datasources-crd/pkg/generated/informers/externalversions/datasource"
-	internalinterfaces "github.com/opsmx/datasources-crd/pkg/generated/informers/externalversions/internalinterfaces"
+	versioned "github.com/opsmx/datasource-crd/pkg/generated/clientset/versioned"
+	datasource "github.com/opsmx/datasource-crd/pkg/generated/informers/externalversions/datasource"
+	internalinterfaces "github.com/opsmx/datasource-crd/pkg/generated/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

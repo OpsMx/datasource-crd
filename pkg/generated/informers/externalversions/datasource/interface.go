@@ -19,8 +19,8 @@ limitations under the License.
 package datasource
 
 import (
-	v1alpha1 "github.com/opsmx/datasources-crd/pkg/generated/informers/externalversions/datasource/v1alpha1"
-	internalinterfaces "github.com/opsmx/datasources-crd/pkg/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/opsmx/datasource-crd/pkg/generated/informers/externalversions/datasource/v1alpha1"
+	internalinterfaces "github.com/opsmx/datasource-crd/pkg/generated/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.
